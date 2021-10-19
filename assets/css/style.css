@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*   DOCUMENTAÇÃO
+
+*** FONTES
+*** ROOT    = [ROOT, VARIÁVEIS]
+*** BODY
+*** HEADER
+*** LOGO
+*** MAIN
+*** MEDIA QUERIES
+
+*/
+
+/*   FONTES   */
+@font-face {
+	font-family: RopaSans;
+	src: url(../fonts/RopaSans/RopaSans-Regular.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Rambla;
+    src: url(../fonts/Rambla/Rambla-Regular.ttf);
+}
+
+/*   ROOT   */
+:root {
+    width: 100%;
+    font-family: Lato;
+    font-size: 15px;
+    
+    /*   VARIÁVEIS   */
+    --cor-primaria: #ADD9E1;
+}
+
+/*   BODY   */
+body {
+    width: 100%;
+}
+
+.tamanhoMaximo {
+    margin: 0 auto;
+    max-width: 66.6666666rem;/*1000px*/
+}
+
+/*   HEADER   */
+header {
+    font-family: Rambla;
+    height: 4rem;
+    background-color: var(--cor-primaria);
+}
+header .tamanhoMaximo, header .tamanhoMaximo nav {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+header nav p {
+    margin: .5rem;
+}
+header nav p:hover {
+    border-bottom: 0.1333333333333333rem solid black;/*2px*/
+}
+
+/*   LOGO   */
+.tamanhoMaximo figure a img {
+    width: 10rem;
+    margin-top: 2rem;
+}
+.tamanhoMaximo figure figcaption {
+    display: none;
+}
+
+/*   MAIN   */
+main {
+    margin-top: 3.3333333rem;/*20px*/
+    text-align: justify;
+}
+main .tamanhoMaximo h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+main .tamanhoMaximo p {
+    margin-bottom: 5rem;
+}
+
+/*   FOOTER   */
+footer {
+    font-family: Rambla;
+    height: 15rem;
+    background-color: var(--cor-primaria);
+}
