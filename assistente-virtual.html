@@ -8,6 +8,42 @@
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+
+        /*   ESTILIZAÇÃO DO CARROSSEL   */
+        .carrossel {
+            margin-top: 200px;
+            text-align: center;
+        }
+        #imagesCarrossel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            margin: 0;
+        }
+        iframe {
+            padding: 0;
+            border: none;
+            height: 220px;
+            width: 150px;
+        }
+
+        #imagesCarrossel a {
+            margin: 0;
+            padding: 0;
+        }
+        .bolinha {
+            /* display: inline; */
+            margin: 1px;
+            padding: 0;
+            height: 15px;
+            width: 15px;
+            border: .5px solid black;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,6 +73,31 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo suscipit, temporibus amet architecto unde, aperiam itaque nemo sapiente, provident placeat voluptates aspernatur ipsum nam eaque facere corrupti sed. Reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, autem maxime ab alias voluptas ex, obcaecati doloribus ad voluptate ea nihil ratione beatae consequatur quaerat id perspiciatis voluptates error tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quos sed maiores incidunt, repudiandae vero odit, sapiente debitis fuga accusamus deleniti. Voluptate, vero. Id sequi corrupti autem dolorem qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem voluptas laborum natus reiciendis? Voluptatibus, eum qui officiis repellendus animi quia optio itaque quod voluptatem! Possimus necessitatibus vero obcaecati tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quia sunt dolore cumque ipsa, tempore dolorem dignissimos facilis reprehenderit laboriosam deleniti tenetur amet enim magnam ipsam eum ipsum ut porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati ducimus maiores nam quia pariatur voluptates cumque porro saepe quas aut, a neque esse illo voluptatem voluptate nostrum, rerum repellendus.</p>
             <br>
             <p>Escolha um personagem para tirar as suas dúvidas:</p>
+
+            <div class="carrossel"> <!--ESTILIZAÇÃO FEITA NO PROPRIO HTML-->
+
+                <iframe src="iframeImages.html" name="persona"></iframe>
+
+                <div id="imagesCarrossel">
+                    <a href="iframeImages.html#ana" target="persona">
+                        <div class="bolinha" id="1"></div>
+                    </a>
+                    <a href="iframeImages.html#gabriel" target="persona">
+                        <div class="bolinha" id="2"></div>
+                    </a>
+                    <a href="iframeImages.html#joao" target="persona">
+                        <div class="bolinha" id="3"></div>
+                    </a>
+                    <a href="iframeImages.html#lucas" target="persona">
+                        <div class="bolinha" id="4"></div>
+                    </a>
+                    <a href="iframeImages.html#maria" target="persona">
+                        <div class="bolinha" id="5"></div>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
     </main>
 
@@ -54,5 +115,7 @@
             <p>Atualizado em 17/10/2021</p>
         </div>
     </footer>
+
+    <script src="assets/js/carrossel.js"></script>
 </body>
 </html>
