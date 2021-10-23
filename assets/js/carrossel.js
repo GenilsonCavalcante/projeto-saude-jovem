@@ -6,7 +6,6 @@ function start() {
 
     setInterval(() => {
         
-
         //REINICIAR:
         if (index > 1) {
             const getId = document.getElementById(`${index - 1}`)
@@ -30,25 +29,16 @@ function start() {
 
                 const getIdAtual = document.getElementById(`${idAtual}`)
                 getIdAtual.style.backgroundColor = 'rgb(27, 89, 139)'
-
+                
                 getId.style.backgroundColor = 'white'
 
-                index = idAtual
+                if (idAtual == index) {//PARA QUANDO CLICAR MAIS DE UMA VEZ EM UM MESMO ITEM.
+                    getIdAtual.style.backgroundColor = 'rgb(27, 89, 139)'
+                }
 
+                index = idAtual
             }            
         })
-
-        // function getEl(n) {
-        //     let idAtual = n
-
-        //     const getIdAtual = document.getElementById(`${idAtual}`)
-        //     getIdAtual.style.backgroundColor = 'rgb(27, 89, 139)'
-
-        //     getId.style.backgroundColor = 'white'
-
-        //     index = idAtual
-        // }
-        // getEl()
 
         //CONTABILIZAR:
         index++
