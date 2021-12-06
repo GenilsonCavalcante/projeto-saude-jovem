@@ -10,42 +10,49 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
+        main .tamanhoMaximo .personas {
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+        }
 
-        /*   ESTILIZAÇÃO DO CARROSSEL   */
-        .carrossel {
-            margin-top: 80px;
+        main .tamanhoMaximo .personas a {
+            margin: 0 5px;
             text-align: center;
         }
-        #imagesCarrossel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-        iframe {
-            padding: 0;
-            border: none;
-            height: 220px;
+        
+        main .tamanhoMaximo .personas a img {
             width: 150px;
         }
-
-        #imagesCarrossel .bolinha a {
-            display: block;
-            margin: 0;
-            padding: 0;
-            height: 15px;
-            width: 15px;
-            border: .5px solid black;
-            border-radius: 50%;
+        
+        main .tamanhoMaximo .personas a p {
+            color: black;
+            font-weight: bold;
+            margin: 10px;
         }
-        .bolinha {
-            margin: 6px 2px 20px;
+
+        @media (max-width: 900px) {
+            main .tamanhoMaximo .personas {
+                width: 100%;
+                max-width: 650px;
+            }
         }
     </style>
+
 </head>
 <body>
     <header>
         <div class="tamanhoMaximo">
+            <div><!--LOGO SAÚDE JOVEM-->
+                <figure>
+                    <a href="index.html"><img src="assets/img/logos/saude jovem logo__horizontal original-larg-200.png"></a>
+                    <figcaption>Logo do Saúde Jovem</figcaption>
+                </figure>
+            </div>
+
             <nav>
                 <p><a href="index.html">Inicio</a></p>
                 <p><a href="assistente-virtual.html">Assistente Virtual</a></p>
@@ -56,13 +63,6 @@
         </div>
     </header>
 
-    <div class="tamanhoMaximo"><!--LOGO SAÚDE JOVEM-->
-        <figure>
-            <a href="index.html"><img src="assets/img/logos/saude jovem logo__horizontal original-larg-200.png"></a>
-            <figcaption>Logo do Saúde Jovem</figcaption>
-        </figure>
-    </div>
-
     <main>
         <div class="tamanhoMaximo">
 
@@ -72,7 +72,30 @@
             <br>
             <p>Escolha um personagem para tirar as suas dúvidas:</p>
 
-            <div class="carrossel"> <!--ESTILIZAÇÃO FEITA NO PROPRIO HTML-->
+            <div class="personas">
+                <a href="assets/html/ana.html">
+                    <img src="assets/img/ana-larg-300.png" alt="Imagem do bot Ana" title="Ana">
+                    <p>Ana</p>
+                </a>
+                <a href="assets/html/gabriel.html">
+                    <img src="assets/img/gabriel-larg-300.png" alt="Imagem do bot Gabriel" title="Gabriel">
+                    <p>Gabriel</p>
+                </a>
+                <a href="assets/html/joao.html">
+                    <img src="assets/img/joao-larg-300.png" alt="Imagem do bot João" title="João">
+                    <p>João</p>
+                </a>
+                <a href="assets/html/lucas.html">
+                    <img src="assets/img/lucas-larg-300.png" alt="Imagem do bot Lucas" title="Lucas">
+                    <p>Lucas</p>
+                </a>
+                <a href="assets/html/maria.html">
+                    <img src="assets/img/maria-larg-300.png" alt="Imagem do bot Maria" title="Maria">
+                    <p>Maria</p>
+                </a>
+            </div>
+
+            <!-- <div class="carrossel"> <!--ESTILIZAÇÃO FEITA NO PROPRIO HTML
 
                 <iframe src="iframeImages.html" name="persona"></iframe>
 
@@ -93,8 +116,38 @@
                         <a href="iframeImages.html#maria" id="5" target="persona"></a>
                     </div>
                 </div>
+                
+            </div>  -->
 
-            </div>
+            <!-- <div class="carrossel"> <!--ESTILIZAÇÃO FEITA NO PROPRIO HTML
+
+                <div class="caixaDeImagens">
+                    <a href="#"><img src="assets/img/ana-larg-300.png" id="ana" alt="ana" title="ana">Ana</a>
+                    <a href="#"><img src="assets/img/gabriel-larg-300.png" id="gabriel" alt="gabriel" title="gabriel">Gabriel</a>
+                    <a href="#"><img src="assets/img/joao-larg-300.png" id="joao" alt="joao" title="joao">João</a>
+                    <a href="#"><img src="assets/img/lucas-larg-300.png" id="lucas" alt="lucas" title="lucas">Lucas</a>
+                    <a href="#"><img src="assets/img/maria-larg-300.png" id="maria" alt="maria" title="maria">Maria</a>
+                </div>
+
+                <div id="bolinhasDoCarrossel">
+                    <div class="bolinha">
+                        <div id="1"></div>
+                    </div>
+                    <div class="bolinha">
+                        <div id="2"></div>
+                    </div>
+                    <div class="bolinha">
+                        <div id="3"></div>
+                    </div>
+                    <div class="bolinha">
+                        <div id="4"></div>
+                    </div>
+                    <div class="bolinha">
+                        <div id="5"></div>
+                    </div>
+                </div>
+                
+            </div> -->
 
         </div>
     </main>

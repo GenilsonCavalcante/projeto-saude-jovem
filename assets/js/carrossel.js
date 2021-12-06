@@ -1,6 +1,7 @@
 //VARIÁVEIS
 let time = 3000;
 let index = 1;
+const arrImages = ['../img/ana-larg-300.png', '../img/gabriel-larg-300.png', '../img/joao-larg-300.png', '/img/lucas-larg-300.png', '/img/maria-larg-300.png']
 
 function start() {
 
@@ -21,11 +22,11 @@ function start() {
         getId.click()
 
         // PEGAR IMAGEM SELECIONADA E CONTINUAR NA ORDEM CORRETA.
-        let el = document.querySelector('#imagesCarrossel');
+        let el = document.querySelector('#bolinhasDoCarrossel');
         el.addEventListener('click', function(e) {
             let idAtual = e.target.id
             
-            if (idAtual != 'imagesCarrossel') {
+            if (idAtual != 'bolinhasDoCarrossel') {
 
                 const getIdAtual = document.getElementById(`${idAtual}`)
                 getIdAtual.style.backgroundColor = 'rgb(27, 89, 139)'
