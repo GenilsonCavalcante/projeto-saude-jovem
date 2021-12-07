@@ -52,13 +52,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-/*Para o foco do elemento*/
-input[type="search"] {
-    border: none;
-}
-textarea:focus, input:focus{
-    outline: none;
-}
 
 /*Removendo estilização para os buttons*/
 button, input[type="submit"], input[type="reset"] {

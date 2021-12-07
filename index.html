@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
-        /* .logoSaudeJovem {
-            margin-top: 30px;
-            text-align: center;
-        } */
-        /* header .tamanhoMaximo .logoSaudeJovem figure img {
-            width: 20px;
+        .titulo {
+            margin: 0 auto;
+            width: 600px;
         }
-        header .tamanhoMaximo .logoSaudeJovem figure figcaption {
-            display: none;
-        } */
+        h1 {
+            font-size: 23px;
+            margin-bottom: 80px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 18px;
+                margin-bottom: 60px;
+            }
+        }
+        @media (max-width: 600px) {
+            .titulo {
+                margin: 0 auto;
+                width: 300px;
+            }
+            h1 {
+                font-size: 13px;
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -47,6 +65,11 @@
 
     <main>
         <div class="tamanhoMaximo">
+
+            <div class="titulo">
+                <h1>Saúde Jovem - Uma estratégia para a prevenção de doenças sexualmente transmissíveis.</h1>
+            </div>
+
             <p class="item" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam iste aliquam tempore ducimus provident vel suscipit perspiciatis alias quo quod, aliquid accusantium veritatis unde illum! Ex nobis inventore nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aperiam praesentium ipsum deleniti beatae architecto, illo possimus rerum error ad cumque, quae ea consequatur nam, minima illum aliquam quis necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nihil nam id iusto neque molestiae corporis, porro quo! Sunt sed mollitia, voluptate neque impedit quibusdam quisquam? Ea eligendi beatae numquam.</p>
             <p class="item" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam iste aliquam tempore ducimus provident vel suscipit perspiciatis alias quo quod, aliquid accusantium veritatis unde illum! Ex nobis inventore nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aperiam praesentium ipsum deleniti beatae architecto, illo possimus rerum error ad cumque, quae ea consequatur nam, minima illum aliquam quis necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nihil nam id iusto neque molestiae corporis, porro quo! Sunt sed mollitia, voluptate neque impedit quibusdam quisquam? Ea eligendi beatae numquam.</p>
             <p class="item" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam iste aliquam tempore ducimus provident vel suscipit perspiciatis alias quo quod, aliquid accusantium veritatis unde illum! Ex nobis inventore nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aperiam praesentium ipsum deleniti beatae architecto, illo possimus rerum error ad cumque, quae ea consequatur nam, minima illum aliquam quis necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nihil nam id iusto neque molestiae corporis, porro quo! Sunt sed mollitia, voluptate neque impedit quibusdam quisquam? Ea eligendi beatae numquam.</p>
@@ -63,16 +86,33 @@
 
     <footer>
         <div class="tamanhoMaximo">
-            <nav>
-                <p><a href="#">Email: </a></p>
-                <p><a href="#">Telefone: </a></p>
-                <p><a href="#">Endereço: </a></p>
-            </nav>
-            
-            <hr>
+            <div class="conteudoRodape">
+                <div class="navegacao">
+                    <h3>Contatos</h3>
+                    
+                    <nav>
+                        <p><a href="#">email@exemplo.com</a></p>
+                        <p><a href="#">+55 83 99999-9999</a></p>
+                        <p><a href="#">Rua Presidente Tancredo Neve, Sousa - PB</a></p>
+                    </nav>
+                </div>
 
-            <p>Copyright 2021 - Todos os direitos reservados</p>
-            <p>Atualizado em 17/10/2021</p>
+                <div class="aplicativos">
+                    <h3>Aplicativos</h3>
+
+                    <a href="#">
+                        <img src="assets/img/play-store2.png" alt="Baixar na Play Store">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/app-store.png" alt="Baixar no Apple Store">
+                    </a>
+                </div>
+            </div>
+
+            <div class="direitosELicenca">
+                <p>Copyright 2021 - Todos os direitos reservados</p>
+                <p>Atualizado em 17/10/2021</p>
+            </div>
         </div>
     </footer>
 

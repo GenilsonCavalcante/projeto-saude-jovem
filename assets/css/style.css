@@ -101,22 +101,48 @@ main .tamanhoMaximo p {
 /*   FOOTER   */
 footer {
     font-family: Rambla;
-    height: 15rem;
+    height: 16rem;
     background-color: var(--cor-primaria);
     color: white;
 }
-footer .tamanhoMaximo nav{
-    padding: 2rem 0;
+footer .tamanhoMaximo .conteudoRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
 }
-footer .tamanhoMaximo p {
-    text-align: center;
-    margin-bottom: 0.4rem;
+footer .tamanhoMaximo .conteudoRodape .navegacao, .aplicativos {
+    margin-top: 40px;
 }
-footer .tamanhoMaximo p a {
+footer .tamanhoMaximo .conteudoRodape .navegacao h3, .aplicativos h3 {
+    font-size: 17px;
+    color: #bab3bb;
+    margin-bottom: 13px;
+}
+footer .tamanhoMaximo .conteudoRodape .navegacao nav p {
+    margin: 10px 0;
+}
+footer .tamanhoMaximo .conteudoRodape .navegacao nav p a {
     color: white;
+}
+footer .tamanhoMaximo .conteudoRodape .aplicativos a img {
+    height: 40px;
+}
+footer .tamanhoMaximo .direitosELicenca {
+    padding-top: 15px;
+    text-align: center;
+}
+footer .tamanhoMaximo .direitosELicenca p:first-child {
+    color: #bab3bb;
 }
 
 /*   MEDIA QUERIES   */
+@media (max-width: 1020px) {
+    footer .tamanhoMaximo .conteudoRodape {
+        margin: 0 20px;
+    }
+}
 
 @media (max-width: 800px) {
     :root {

@@ -1,6 +1,18 @@
-div.caixaDeDialogo {
+main .tamanhoMaximo .imagemPersona img {
+    width: 200px;
+}
+
+main .tamanhoMaximo .inputUsuario {
+    text-align: center;
+}
+main .tamanhoMaximo .inputUsuario #entradaDeDados {
+    width: 500px;
+    height: 100px;
+}
+
+/* div.caixaDeDialogo {
     background-color: #E0E2DB;
     width: 200px;
     height: 200px;
     overflow: auto;
-}
+} */
