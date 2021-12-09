@@ -2,12 +2,27 @@ main .tamanhoMaximo .imagemPersona img {
     width: 200px;
 }
 
-main .tamanhoMaximo .inputUsuario {
+main .tamanhoMaximo .chat {
+    width: 400px;
+    background-color: rgb(204, 204, 204);
+    margin: 0 auto;
+    padding: 5px;
     text-align: center;
+    border-radius: 5px;
+    border: 1.8px solid #b22dff;
 }
-main .tamanhoMaximo .inputUsuario #entradaDeDados {
-    width: 500px;
-    height: 100px;
+main .tamanhoMaximo .chat #inputText {
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-right: 100%;
+    width: 370px;
+    background-color:rgb(204, 204, 204);
+}
+main .tamanhoMaximo .chat a img {
+    height: 30px;
+    margin-left: 90%;
 }
 
 /* div.caixaDeDialogo {

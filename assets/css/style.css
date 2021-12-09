@@ -68,7 +68,7 @@ header nav p a {
     color: white;
 }
 header nav p:hover {
-    border-bottom: 0.1333333333333333rem solid black;/*2px*/
+    border-bottom: 0.1333333333333333rem solid #39A0ED;/*2px*/
 }
 
 /*   LOGO   */
@@ -135,6 +135,7 @@ footer .tamanhoMaximo .direitosELicenca {
 }
 footer .tamanhoMaximo .direitosELicenca p:first-child {
     color: #bab3bb;
+    margin-bottom: 4px;
 }
 
 /*   MEDIA QUERIES   */

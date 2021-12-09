@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saúde Jovem</title>    
 
+    <link rel="shortcut icon" href="../img/logos/saude-jovem-logo__icone-app.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bots.css">
@@ -43,9 +44,10 @@
                 </div> -->
             </div>
 
-            <div class="inputUsuario">
-                <textarea name="entradaDeDados" id="entradaDeDados" placeholder="Tire suas dúvidas..."></textarea>
-                <a href="#">
+            <div class="chat">
+                <textarea name="inputText" placeholder="Tire suas dúvidas..." id="inputText" maxlength='200' rows="1"></textarea>
+                <!-- <br> -->
+                <a > <!-- FALTA O HREF -->
                     <img src="../img/enviar-mensagem-svg.svg" alt="Icone de Enviar Mensagem">
                 </a>
             </div>
@@ -90,5 +92,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="../js/inputTextBot.js"></script>
 </body>
 </html>
