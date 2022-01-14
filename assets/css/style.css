@@ -112,22 +112,23 @@ footer .tamanhoMaximo .conteudoRodape {
     border-bottom: 2px solid white;
     margin-bottom: 20px;
 }
-footer .tamanhoMaximo .conteudoRodape .navegacao, .aplicativos {
+footer .tamanhoMaximo .conteudoRodape .contatos, .realizacao, .apoio {
     margin-top: 40px;
 }
-footer .tamanhoMaximo .conteudoRodape .navegacao h3, .aplicativos h3 {
+footer .tamanhoMaximo .conteudoRodape .contatos h3, .realizacao h3, .apoio h3 {
     font-size: 17px;
     color: #bab3bb;
     margin-bottom: 13px;
 }
-footer .tamanhoMaximo .conteudoRodape .navegacao nav p {
+footer .tamanhoMaximo .conteudoRodape .contatos nav p {
     margin: 10px 0;
 }
-footer .tamanhoMaximo .conteudoRodape .navegacao nav p a {
+footer .tamanhoMaximo .conteudoRodape .contatos nav p a {
     color: white;
 }
-footer .tamanhoMaximo .conteudoRodape .aplicativos a img {
-    height: 40px;
+footer .tamanhoMaximo .conteudoRodape .realizacao img, .apoio img {
+    height: 65px;
+    margin: 0 5px;
 }
 footer .tamanhoMaximo .direitosELicenca {
     padding-top: 15px;
