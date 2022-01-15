@@ -1,232 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saúde Jovem</title>
 
-    <link rel="shortcut icon" href="assets/img/logos/saude-jovem-logo__icone-app.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="shortcut icon"
+      href="assets/img/logos/saude-jovem-logo__icone-app.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
-        main .tamanhoMaximo p {
-            margin: 0;
-            padding: 0;
+      main .tamanhoMaximo p {
+        margin: 0;
+        padding: 0;
+      }
+      main .tamanhoMaximo .imgEquipe {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+      }
+      main .tamanhoMaximo .imgEquipe h3 {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+      main .tamanhoMaximo .imgEquipe .colunaImagem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      main .tamanhoMaximo .imgEquipe .colunaImagem ._imgMargem {
+        margin-right: 30px;
+      }
+      main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual {
+        margin-bottom: 30px;
+      }
+      main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual p {
+        margin-bottom: 10px;
+      }
+      main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual a img {
+        width: 100px;
+        margin: 10px;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 800px) {
+        main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual a img {
+          width: 80px;
+          margin: 8px;
         }
-        main .tamanhoMaximo .imgEquipe {
-            width: 100%;
-            max-width: 850px;
-            margin: 0 auto;
-        }
-        main .tamanhoMaximo .imgEquipe h3 {
-            font-weight: bold;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
+      }
+
+      @media (max-width: 470px) {
         main .tamanhoMaximo .imgEquipe .colunaImagem {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+          display: block;
+          text-align: center;
         }
         main .tamanhoMaximo .imgEquipe .colunaImagem ._imgMargem {
-            margin-right: 30px;
+          margin-right: 0;
         }
-        main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual {
-            margin-bottom: 30px;
-        }
-        main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual p {
-            margin-bottom: 10px;
-        }
-        main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual a img {
-            width: 100px;
-            margin: 10px;
-            border-radius: 50%;
-        }
-
-        @media (max-width: 800px) {
-
-            main .tamanhoMaximo .imgEquipe .colunaImagem .imagemIndividual a img {
-                width: 80px;
-                margin: 8px;
-            }
-        }
-
-        @media (max-width: 470px) {
-
-            main .tamanhoMaximo .imgEquipe .colunaImagem {
-                display: block;
-                text-align: center;
-            }
-            main .tamanhoMaximo .imgEquipe .colunaImagem ._imgMargem {
-                margin-right: 0;
-            }
-        }
-
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="tamanhoMaximo">
-            <div><!--LOGO SAÚDE JOVEM-->
-                <figure>
-                    <a href="index.html"><img src="assets/img/logos/saude jovem logo__horizontal original-larg-200.png"></a>
-                    <figcaption>Logo do Saúde Jovem</figcaption>
-                </figure>
-            </div>
-
-            <nav>
-                <p><a href="index.html">Inicio</a></p>
-                <p><a href="assistente-virtual.html">Assistente Virtual</a></p>
-                <p><a href="equipe.html">Equipe</a></p>
-                <p><a href="download.html">Download</a></p>
-                <p><a href="publicacoes.html">Publicações</a></p>
-            </nav>
+      <div class="tamanhoMaximo">
+        <div>
+          <!--LOGO SAÚDE JOVEM-->
+          <figure>
+            <a href="index.html"
+              ><img
+                src="assets/img/logos/saude jovem logo__horizontal original-larg-200.png"
+            /></a>
+            <figcaption>Logo do Saúde Jovem</figcaption>
+          </figure>
         </div>
+
+        <nav>
+          <p><a href="index.html">Inicio</a></p>
+          <p><a href="assistente-virtual.html">Assistente Virtual</a></p>
+          <p><a href="equipe.html">Equipe</a></p>
+          <p><a href="download.html">Download</a></p>
+          <p><a href="publicacoes.html">Publicações</a></p>
+        </nav>
+      </div>
     </header>
 
-
     <main>
-        <div class="tamanhoMaximo">
-            <h2>Equipe</h2>
+      <div class="tamanhoMaximo">
+        <h2>Equipe</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam fuga quidem dolore maxime minima earum molestiae ducimus, eius minus molestias, obcaecati quis mollitia aspernatur quae provident nostrum consequuntur magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a facilis quo iusto neque commodi praesentium tempora. Aut sequi dolores culpa accusantium ad, nisi exercitationem et iste recusandae quo cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam fugit voluptate ipsam alias ut autem reiciendis nihil adipisci perferendis totam harum magnam nostrum quasi, possimus nobis quis vitae in! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur soluta tempora libero molestias quo officia perferendis id veniam sunt, similique nostrum eveniet ad minus quae sequi doloremque minima expedita nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nemo! Odit nostrum, nulla aspernatur sint quas quod deleniti iste architecto sed, fugit velit nisi cum officia rerum exercitationem optio beatae.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          aliquam fuga quidem dolore maxime minima earum molestiae ducimus, eius
+          minus molestias, obcaecati quis mollitia aspernatur quae provident
+          nostrum consequuntur magni! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Atque a facilis quo iusto neque commodi praesentium
+          tempora. Aut sequi dolores culpa accusantium ad, nisi exercitationem
+          et iste recusandae quo cumque. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptatem aliquam fugit voluptate ipsam alias ut
+          autem reiciendis nihil adipisci perferendis totam harum magnam nostrum
+          quasi, possimus nobis quis vitae in! Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Consectetur soluta tempora libero
+          molestias quo officia perferendis id veniam sunt, similique nostrum
+          eveniet ad minus quae sequi doloremque minima expedita nam. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nemo! Odit
+          nostrum, nulla aspernatur sint quas quod deleniti iste architecto sed,
+          fugit velit nisi cum officia rerum exercitationem optio beatae.
+        </p>
 
-            <div class="imgEquipe"><!--ESTILIZAÇÃO FEITA NO PRÓPRIO HTML-->
+        <div class="imgEquipe">
+          <!--ESTILIZAÇÃO FEITA NO PRÓPRIO HTML-->
 
-                <h3>Coordenação:</h3>
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="http://lattes.cnpq.br/8821632520139406" target="_blank">
-                            <img src="assets/img/equipe/Racknelly.jpg" alt="Racknelly" title="Rackynelly Soares">
-                        </a>
-                        <p>Racknelly Soares</p>
-                        <a href="http://lattes.cnpq.br/8821632520139406" target="_blank">http://lattes.cnpq.br/8821632520139406</a>
-                    </div>
-                </div>
-
-                <h3>Orientação:</h3>
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="http://lattes.cnpq.br/5582403490028754" target="_blank">
-                            <img src="assets/img/equipe/Edfran.jpg" alt="Edfran" title="Edyfran de Medeiros Fernandes">
-                        </a>
-                        <p>Edyfran de Medeiros</p>
-                        <a href="http://lattes.cnpq.br/5582403490028754" target="_blank">http://lattes.cnpq.br/5582403490028754</a>
-                    </div>
-
-                    <div class="imagemIndividual">
-                        <a href="http://lattes.cnpq.br/1830810672240310" target="_blank">
-                            <img src="assets/img/equipe/Douglas.jpg" alt="Douglas" title="Douglas Andrade de Meneses">
-                        </a>
-                        <p>Douglas Andrade</p>
-                        <a href="http://lattes.cnpq.br/1830810672240310" target="_blank">http://lattes.cnpq.br/1830810672240310</a>
-                    </div>
-                </div>
-
-                <h3>Iniciação científica e/ou extensão:</h3>
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="http://lattes.cnpq.br/1642425437794228" target="_blank">
-                            <img src="assets/img/equipe/Fellippe.jpg" alt="Fellippe" title="Felippe Rian de Oliveira">
-                        </a>
-                        <p>Felippe Rian</p>
-                        <a href="http://lattes.cnpq.br/1642425437794228" target="_blank">http://lattes.cnpq.br/1642425437794228</a>
-                    </div>
-
-                    <div class="imagemIndividual">
-                        <a href="http://lattes.cnpq.br/9591201601001728" target="_blank">
-                            <img src="assets/img/equipe/Genilson.jpg" alt="Genilson" title="Genilson Cavalcante">
-                        </a>
-                        <p>Genilson Cavalcante</p>
-                        <a href="http://lattes.cnpq.br/9591201601001728" target="_blank">http://lattes.cnpq.br/9591201601001728</a>
-                    </div>
-                </div>
-
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="#" target="_blank">
-                            <img src="assets/img/equipe/Jesse.jpg" alt="Jesse" title="Jesse">
-                        </a>
-                        <p>Jesse</p>
-                        <a href="#" target="_blank">-----------------------------------------------------------</a>
-                    </div>
-
-                    <div class="imagemIndividual">
-                        <a href="http://lattes.cnpq.br/5446519719824386" target="_blank">
-                            <img src="assets/img/equipe/Lucas.jpg" alt="Lucas" title="Lucas Alves de Sá">
-                        </a>
-                        <p>Lucas Alves</p>
-                        <a href="http://lattes.cnpq.br/5446519719824386" target="_blank">http://lattes.cnpq.br/5446519719824386</a>
-                    </div>
-                </div>
-
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="http://lattes.cnpq.br/3173445866876561" target="_blank">
-                            <img src="assets/img/equipe/Maciel.jpg" alt="Maciel" title="Maciel Gomes Suassuna">
-                        </a>
-                        <p>Maciel Gomes</p>
-                        <a href="http://lattes.cnpq.br/3173445866876561" target="_blank">http://lattes.cnpq.br/3173445866876561</a>
-                    </div>
-
-                    <div class="imagemIndividual">
-                        <a href="#" target="_blank">
-                            <img src="assets/img/equipe/Mariana.jpg" alt="Mariana" title="Mariana Luzia de Lima">
-                        </a>
-                        <p>Mariana Luzia</p>
-                        <a href="#" target="_blank">-----------------------------------------------------------</a>
-                    </div>
-                </div>
-
-                <div class="colunaImagem">
-                    <div class="imagemIndividual _imgMargem">
-                        <a href="http://lattes.cnpq.br/3742962872327688" target="_blank">
-                            <img src="assets/img/equipe/Viviane.jpg" alt="Viviane" title="Viviane Silva de Lucena">
-                        </a>
-                        <p>Viviane Silva</p>
-                        <a href="http://lattes.cnpq.br/3742962872327688" target="_blank">http://lattes.cnpq.br/3742962872327688</a>
-                    </div>
-                </div>
-
+          <h3>Coordenação:</h3>
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="http://lattes.cnpq.br/8821632520139406" target="_blank">
+                <img
+                  src="assets/img/equipe/Racknelly.jpg"
+                  alt="Racknelly"
+                  title="Rackynelly Soares"
+                />
+              </a>
+              <p>Racknelly Soares</p>
+              <a href="http://lattes.cnpq.br/8821632520139406" target="_blank"
+                >http://lattes.cnpq.br/8821632520139406</a
+              >
             </div>
+          </div>
+
+          <h3>Orientação:</h3>
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="http://lattes.cnpq.br/5582403490028754" target="_blank">
+                <img
+                  src="assets/img/equipe/Edfran.jpg"
+                  alt="Edfran"
+                  title="Edyfran de Medeiros Fernandes"
+                />
+              </a>
+              <p>Edyfran de Medeiros</p>
+              <a href="http://lattes.cnpq.br/5582403490028754" target="_blank"
+                >http://lattes.cnpq.br/5582403490028754</a
+              >
+            </div>
+
+            <div class="imagemIndividual">
+              <a href="http://lattes.cnpq.br/1830810672240310" target="_blank">
+                <img
+                  src="assets/img/equipe/Douglas.jpg"
+                  alt="Douglas"
+                  title="Douglas Andrade de Meneses"
+                />
+              </a>
+              <p>Douglas Andrade</p>
+              <a href="http://lattes.cnpq.br/1830810672240310" target="_blank"
+                >http://lattes.cnpq.br/1830810672240310</a
+              >
+            </div>
+          </div>
+
+          <h3>Iniciação científica e/ou extensão:</h3>
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="http://lattes.cnpq.br/1642425437794228" target="_blank">
+                <img
+                  src="assets/img/equipe/Fellippe.jpg"
+                  alt="Fellippe"
+                  title="Felippe Rian de Oliveira"
+                />
+              </a>
+              <p>Felippe Rian</p>
+              <a href="http://lattes.cnpq.br/1642425437794228" target="_blank"
+                >http://lattes.cnpq.br/1642425437794228</a
+              >
+            </div>
+
+            <div class="imagemIndividual">
+              <a href="http://lattes.cnpq.br/9591201601001728" target="_blank">
+                <img
+                  src="assets/img/equipe/Genilson.jpg"
+                  alt="Genilson"
+                  title="Genilson Cavalcante"
+                />
+              </a>
+              <p>Genilson Cavalcante</p>
+              <a href="http://lattes.cnpq.br/9591201601001728" target="_blank"
+                >http://lattes.cnpq.br/9591201601001728</a
+              >
+            </div>
+          </div>
+
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="#" target="_blank">
+                <img
+                  src="assets/img/equipe/Jesse.jpg"
+                  alt="Jesse"
+                  title="Jesse"
+                />
+              </a>
+              <p>Jesse</p>
+              <a href="#" target="_blank"
+                >-----------------------------------------------------------</a
+              >
+            </div>
+
+            <div class="imagemIndividual">
+              <a href="http://lattes.cnpq.br/5446519719824386" target="_blank">
+                <img
+                  src="assets/img/equipe/Lucas.jpg"
+                  alt="Lucas"
+                  title="Lucas Alves de Sá"
+                />
+              </a>
+              <p>Lucas Alves</p>
+              <a href="http://lattes.cnpq.br/5446519719824386" target="_blank"
+                >http://lattes.cnpq.br/5446519719824386</a
+              >
+            </div>
+          </div>
+
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="http://lattes.cnpq.br/3173445866876561" target="_blank">
+                <img
+                  src="assets/img/equipe/Maciel.jpg"
+                  alt="Maciel"
+                  title="Maciel Gomes Suassuna"
+                />
+              </a>
+              <p>Maciel Gomes</p>
+              <a href="http://lattes.cnpq.br/3173445866876561" target="_blank"
+                >http://lattes.cnpq.br/3173445866876561</a
+              >
+            </div>
+
+            <div class="imagemIndividual">
+              <a href="#" target="_blank">
+                <img
+                  src="assets/img/equipe/Mariana.jpg"
+                  alt="Mariana"
+                  title="Mariana Luzia de Lima"
+                />
+              </a>
+              <p>Mariana Luzia</p>
+              <a href="#" target="_blank"
+                >-----------------------------------------------------------</a
+              >
+            </div>
+          </div>
+
+          <div class="colunaImagem">
+            <div class="imagemIndividual _imgMargem">
+              <a href="http://lattes.cnpq.br/3742962872327688" target="_blank">
+                <img
+                  src="assets/img/equipe/Viviane.jpg"
+                  alt="Viviane"
+                  title="Viviane Silva de Lucena"
+                />
+              </a>
+              <p>Viviane Silva</p>
+              <a href="http://lattes.cnpq.br/3742962872327688" target="_blank"
+                >http://lattes.cnpq.br/3742962872327688</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer>
-        <div class="tamanhoMaximo">
-            <div class="conteudoRodape">
-                <div class="contatos">
-                    <h3>Contatos</h3>
-                    
-                    <nav>
-                        <p><a href="mailto:geomidas.ifpb@gmail.com">geomidas.ifpb@gmail.com</a></p>
-                        <p><a href="tel:+558335211224">+55 83 3521-1224/1825</a></p>
-                        <p><a href="https://www.google.com/maps/place/IFPB+-+Campus+Sousa/@-6.779567,-38.229873,17z/data=!4m12!1m6!3m5!1s0x0:0x52b84e871806379d!2sIFPB+-+Campus+Sousa!8m2!3d-6.7799081!4d-38.2307425!3m4!1s0x0:0x52b84e871806379d!8m2!3d-6.7799081!4d-38.2307425?hl=pt-BR">Rua Presidente Tancredo Neve, Sousa - PB</a></p>
-                    </nav>
-                </div>
+      <div class="tamanhoMaximo">
+        <div class="conteudoRodape">
+          <div class="contatos">
+            <h3>Contatos</h3>
 
-                <div class="realizacao">
-                    <h3>Realização</h3>
-                    <img src="assets/img/logos/logo2-200.png" alt="Logo IFPB">
-                    <img src="assets/img/logos/geomidas logo__branca-200.png" alt="Logo GeoMIDAS">
-                </div>
+            <nav>
+              <p>
+                <a href="mailto:geomidas.ifpb@gmail.com"
+                  >geomidas.ifpb@gmail.com</a
+                >
+              </p>
+              <p><a href="tel:+558335211224">+55 83 3521-1224/1825</a></p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/IFPB+-+Campus+Sousa/@-6.779567,-38.229873,17z/data=!4m12!1m6!3m5!1s0x0:0x52b84e871806379d!2sIFPB+-+Campus+Sousa!8m2!3d-6.7799081!4d-38.2307425!3m4!1s0x0:0x52b84e871806379d!8m2!3d-6.7799081!4d-38.2307425?hl=pt-BR"
+                  target="_blank"
+                  >Rua Presidente Tancredo Neve, Sousa - PB</a
+                >
+              </p>
+            </nav>
+          </div>
 
-                <div class="apoio">
-                    <h3>Apoio</h3>
-                    <<img src="assets/img/logos/UnB.png" alt="Logo UnB">
-                    <img src="assets/img/logos/Lab ECOS-200.jpg" alt="Logo ECOS">
-                    <img src="assets/img/logos/CNPq_v2017_rgb-200.png" alt="Logo CNPq">
-                </div>
-            </div>
+          <div class="realizacao">
+            <h3>Realização</h3>
+            <img src="assets/img/logos/logo2-200.png" alt="Logo IFPB" />
+            <img
+              src="assets/img/logos/geomidas logo__branca-200.png"
+              alt="Logo GeoMIDAS"
+            />
+          </div>
 
-            <div class="direitosELicenca">
-                <p>Copyright 2021 - Todos os direitos reservados</p>
-                <p>Atualizado em 17/10/2021</p>
-            </div>
+          <div class="apoio">
+            <h3>Apoio</h3>
+            <img src="assets/img/logos/UnB.png" alt="Logo UnB" />
+            <img src="assets/img/logos/Lab ECOS-200.jpg" alt="Logo ECOS" />
+            <img src="assets/img/logos/CNPq-Branca-Copia.png" alt="Logo CNPq" />
+          </div>
         </div>
-    </footer>
 
-</body>
+        <div class="direitosELicenca">
+          <p>Copyright 2021 - Todos os direitos reservados</p>
+          <p>Atualizado em 17/10/2021</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

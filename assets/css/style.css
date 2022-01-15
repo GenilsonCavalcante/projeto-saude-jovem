@@ -95,6 +95,7 @@ main .tamanhoMaximo h2 {
     padding-bottom: 3rem;
 }
 main .tamanhoMaximo p {
+    line-height: 20px;
     padding-bottom: 5rem;
 }
 
