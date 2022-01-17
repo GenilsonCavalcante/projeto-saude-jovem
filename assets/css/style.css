@@ -96,7 +96,8 @@ main .tamanhoMaximo h2 {
 }
 main .tamanhoMaximo p {
     line-height: 20px;
-    padding-bottom: 5rem;
+    word-spacing: 4px;
+    padding-bottom: 4rem;
 }
 
 /*   FOOTER   */
