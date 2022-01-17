@@ -45,6 +45,27 @@
           max-width: 650px;
         }
       }
+
+      /*Caixa de texto dinâmica*/
+      .caixaDeDialogo {
+        position: relative;
+        display: inline-block;
+      }
+
+      .caixaDeDialogo .textoDaCaixaDeDialogo {
+        visibility: hidden;
+        width: 120px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .caixaDeDialogo:hover .textoDaCaixaDeDialogo {
+        visibility: visible;
+      }
     </style>
   </head>
   <body>
@@ -101,43 +122,63 @@
 
         <div class="personas">
           <a href="assets/html/ana.html">
-            <img
-              src="assets/img/personas/ana-larg-300.png"
-              alt="Imagem do bot Ana"
-              title="Ana"
-            />
+            <div class="imagemHover">
+              <div class="caixaDeDialogo">
+                <img
+                src="assets/img/personas/ana-larg-300.png"
+                alt="Imagem do bot Ana"
+                />
+                <span class="textoDaCaixaDeDialogo">Olá, sou a Ana</span>
+              </div>
+            </div>
             <p>Ana</p>
           </a>
           <a href="assets/html/gabriel.html">
-            <img
-              src="assets/img/personas/gabriel-larg-300.png"
-              alt="Imagem do bot Gabriel"
-              title="Gabriel"
-            />
+            <div class="imagemHover">
+              <div class="caixaDeDialogo">
+                <img
+                  src="assets/img/personas/gabriel-larg-300.png"
+                  alt="Imagem do bot Gabriel"
+                />
+                <span class="textoDaCaixaDeDialogo">Olá, sou o Gabriel</span>
+              </div>
+            </div>
             <p>Gabriel</p>
           </a>
           <a href="assets/html/joao.html">
-            <img
-              src="assets/img/personas/joao-larg-300.png"
-              alt="Imagem do bot João"
-              title="João"
-            />
+            <div class="imagemHover">
+              <div class="caixaDeDialogo">
+                <img
+                  src="assets/img/personas/joao-larg-300.png"
+                  alt="Imagem do bot João"
+                />
+                <span class="textoDaCaixaDeDialogo">Olá, sou o João</span>
+              </div>
+            </div>
             <p>João</p>
           </a>
           <a href="assets/html/lucas.html">
-            <img
-              src="assets/img/personas/lucas-larg-300.png"
-              alt="Imagem do bot Lucas"
-              title="Lucas"
-            />
+            <div class="imagemHover">
+              <div class="caixaDeDialogo">
+                <img
+                  src="assets/img/personas/lucas-larg-300.png"
+                  alt="Imagem do bot Lucas"
+                />
+                <span class="textoDaCaixaDeDialogo">Olá, sou o Lucas</span>
+              </div>
+            </div>
             <p>Lucas</p>
           </a>
           <a href="assets/html/maria.html">
-            <img
-              src="assets/img/personas/maria-larg-300.png"
-              alt="Imagem do bot Maria"
-              title="Maria"
-            />
+            <div class="imagemHover">
+              <div class="caixaDeDialogo">
+                <img
+                  src="assets/img/personas/maria-larg-300.png"
+                  alt="Imagem do bot Maria"
+                />
+                <span class="textoDaCaixaDeDialogo">Olá, sou o Maria</span>
+              </div>
+            </div>
             <p>Maria</p>
           </a>
         </div>
